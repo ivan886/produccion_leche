@@ -1,0 +1,16 @@
+D:\IdeasoftProjects\c#\ProduccionLeche\ProduccionLeche\bin\Debug\net5.0\ProduccionLeche.exe
+D:\IdeasoftProjects\c#\ProduccionLeche\ProduccionLeche\bin\Debug\net5.0\ProduccionLeche.deps.json
+D:\IdeasoftProjects\c#\ProduccionLeche\ProduccionLeche\bin\Debug\net5.0\ProduccionLeche.runtimeconfig.json
+D:\IdeasoftProjects\c#\ProduccionLeche\ProduccionLeche\bin\Debug\net5.0\ProduccionLeche.runtimeconfig.dev.json
+D:\IdeasoftProjects\c#\ProduccionLeche\ProduccionLeche\bin\Debug\net5.0\ProduccionLeche.dll
+D:\IdeasoftProjects\c#\ProduccionLeche\ProduccionLeche\bin\Debug\net5.0\ref\ProduccionLeche.dll
+D:\IdeasoftProjects\c#\ProduccionLeche\ProduccionLeche\bin\Debug\net5.0\ProduccionLeche.pdb
+D:\IdeasoftProjects\c#\ProduccionLeche\ProduccionLeche\obj\Debug\net5.0\ProduccionLeche.csprojAssemblyReference.cache
+D:\IdeasoftProjects\c#\ProduccionLeche\ProduccionLeche\obj\Debug\net5.0\ProduccionLeche.GeneratedMSBuildEditorConfig.editorconfig
+D:\IdeasoftProjects\c#\ProduccionLeche\ProduccionLeche\obj\Debug\net5.0\ProduccionLeche.AssemblyInfoInputs.cache
+D:\IdeasoftProjects\c#\ProduccionLeche\ProduccionLeche\obj\Debug\net5.0\ProduccionLeche.AssemblyInfo.cs
+D:\IdeasoftProjects\c#\ProduccionLeche\ProduccionLeche\obj\Debug\net5.0\ProduccionLeche.csproj.CoreCompileInputs.cache
+D:\IdeasoftProjects\c#\ProduccionLeche\ProduccionLeche\obj\Debug\net5.0\ProduccionLeche.dll
+D:\IdeasoftProjects\c#\ProduccionLeche\ProduccionLeche\obj\Debug\net5.0\ref\ProduccionLeche.dll
+D:\IdeasoftProjects\c#\ProduccionLeche\ProduccionLeche\obj\Debug\net5.0\ProduccionLeche.pdb
+D:\IdeasoftProjects\c#\ProduccionLeche\ProduccionLeche\obj\Debug\net5.0\ProduccionLeche.genruntimeconfig.cache
