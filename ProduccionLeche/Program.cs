@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading;
 
+
 namespace ProduccionLeche
 {
     class Program
@@ -9,14 +10,19 @@ namespace ProduccionLeche
        
 
         static void Main(string[] args)
-        {
-           for(int i = 0 ;i<70;i++){
-            Vaca unaVaca = Spawner.generarNuevaVaca();
-            Console.WriteLine(unaVaca.getNombre());
-            Console.WriteLine(unaVaca.getFechaNacimiento());
-            Console.WriteLine(unaVaca.getProduccion());
-
+        { // Vaca unaVaca = new Vaca(nombre, fechaCumpleaños, produccion);
+            Finca unaFinca = new Finca(1,"Bella Vista"); 
+            
+           for(int i = 0 ;i<10;i++){
+                Thread.Sleep(5000);
+                Vaca unaVaca = Spawner.generarNuevaVaca();
+                unaFinca.recibirVaca(unaVaca);
            }
+
+           foreach (Vaca vaca in unaFinca.getVacas())
+           {   Console.WriteLine("Nombre: "+vaca.getNombre());
+           }
+           
         }
         
         

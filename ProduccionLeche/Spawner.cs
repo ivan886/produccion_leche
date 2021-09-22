@@ -12,14 +12,14 @@ namespace ProduccionLeche
         private static string generarNombreAleatorio()
         {   string[] nombres = {"Bessie", "Duende" ,"Botón de oro" ,"Clarabelle","Dottie","Guinness","magia","mantequilla"}; 
             Random rd = new Random();
-            int posicion = rd.Next(0,8);  
+            int posicion = rd.Next(0,7);  
             return nombres[posicion];
         }
 
         private static   DateTime generarFechaNacimiento()
         {   Random rd = new Random();
-            int dia = rd.Next(1, 32);
-            int mes = rd.Next(1, 13);
+            int dia = rd.Next(1, 31);
+            int mes = rd.Next(1, 12);
             int año = rd.Next(DateTime.Now.Year-7, DateTime.Now.Year);
             DateTime fechaNacimiento = new DateTime(año, mes, dia);
             return fechaNacimiento;

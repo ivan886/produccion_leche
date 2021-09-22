@@ -8,7 +8,7 @@
         private  string ubicacion;
         private float lat;
         private float lon;
-        public  Vaca[] vacas = new Vaca[100];
+        private  Vaca[] vacas = new Vaca[100];
         private float produccionTotal = 0;
         
 
@@ -29,9 +29,22 @@
             }
             return this.produccionTotal;
         }
+
         
+        public void recibirVaca(Vaca unaVaca)
+        {   int posicionVacio = 0;
+            foreach (Vaca vaca in this.vacas)
+            { if (vaca == null) break;
+                posicionVacio++;
+            }
+            if(posicionVacio<100)
+             vacas[posicionVacio] = unaVaca; 
+        }
+
+
+
+
         /*encapsulacion */
-        
         /*set  y get */
         public void setNombre(string nombre)
         {   this.nombre = nombre.ToUpper();
@@ -83,6 +96,16 @@
         {
             return this.lon;
         }
+
+        public void set(Vaca[] vacas)
+        {   this.vacas = vacas;
+        }
+
+        public Vaca[] getVacas()
+        {
+            return this.vacas;
+        }
+
 
 
     }
