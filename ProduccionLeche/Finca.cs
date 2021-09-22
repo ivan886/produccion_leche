@@ -44,6 +44,16 @@ namespace ProduccionLeche
             
         }
 
+        public float getMenorProduccion()
+        {
+            return 0;
+        }
+        
+        public Vaca getPorNombre(string nombre)
+        {
+            return null;
+        }
+
 
         public void recibirVaca(Vaca unaVaca)
         {   int posicionVacio = 0;
