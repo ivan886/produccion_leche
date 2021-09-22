@@ -1,4 +1,6 @@
-﻿namespace ProduccionLeche
+﻿using System;
+
+namespace ProduccionLeche
 {
     public class Finca
     {    /*Atributos*/
@@ -30,7 +32,19 @@
             return this.produccionTotal;
         }
 
-        
+        public float getMayorProduccion()
+        {   float max = 0;
+            foreach (Vaca vaca in this.vacas)
+            {
+                if (vaca == null) break;
+                if (vaca.getProduccion() > max)
+                    max = vaca.getProduccion();
+            }
+            return max;
+            
+        }
+
+
         public void recibirVaca(Vaca unaVaca)
         {   int posicionVacio = 0;
             foreach (Vaca vaca in this.vacas)
