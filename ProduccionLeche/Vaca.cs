@@ -24,8 +24,7 @@ namespace ProduccionLeche
         private int PD;
 
         public Vaca(int id, string nombre, DateTime fechaNacimiento, float produccion )
-        {
-            this.id = id;
+        {   this.id = id;
             this.nombre = nombre;
             this.fechaNacimiento = fechaNacimiento;
             this.produccion = produccion;
@@ -35,6 +34,8 @@ namespace ProduccionLeche
             this.fechaNacimiento = fechaNacimiento;
             this.produccion = produccion;
         }
+
+      
 
         public DateTime getFechaNacimiento()
         {
@@ -47,13 +48,12 @@ namespace ProduccionLeche
         }
 
         public string getNombre()
-        {
-            return this.nombre;
+        {      
+            return   this.nombre;
         }
 
         public void setNombre(string nombre)
-        {
-            this.nombre = nombre;
+        {   this.nombre = nombre.ToUpper();
         }
         
 

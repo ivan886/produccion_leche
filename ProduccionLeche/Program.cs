@@ -5,9 +5,7 @@ using System.Threading;
 namespace ProduccionLeche
 {
     class Program
-    {
-
-       
+    {  
 
         static void Main(string[] args)
         { // Vaca unaVaca = new Vaca(nombre, fechaCumpleaños, produccion);
@@ -18,17 +16,18 @@ namespace ProduccionLeche
                 Vaca unaVaca = Spawner.generarNuevaVaca();
                 unaFinca.recibirVaca(unaVaca);
            }
-           try
-           { foreach (Vaca vaca in unaFinca.getVacas())
-              {    Console.WriteLine("Nombre: " + vaca.getNombre());
-              }
-           } catch (Exception e)
-           { 
-              Console.WriteLine(e.Message);
-           }
            
+    
+           Console.WriteLine("Max:  "+ unaFinca.getMayorProduccion());
+           Console.WriteLine("Min: "+ unaFinca.getMenorProduccion());
+           Console.WriteLine("Produccion total: "+ unaFinca.getProduccionTotal());
 
-           Console.WriteLine("El maximo de litros de leche que produce una vaca en la finca es "+ unaFinca.getMayorProduccion());
+           Vaca otraVaca = unaFinca.buscarPorNombre("Duende");
+
+           if (otraVaca != null)
+           {  Console.WriteLine(otraVaca.ToString());
+               
+           }
 
         }
         

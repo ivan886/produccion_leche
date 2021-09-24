@@ -45,12 +45,28 @@ namespace ProduccionLeche
         }
 
         public float getMenorProduccion()
-        {
-            return 0;
+        {   float min = 500;
+            foreach (Vaca vaca in this.vacas)
+            {
+                if (vaca == null) break;
+                if (vaca.getProduccion() < min)
+                    min = vaca.getProduccion();
+            }
+            return min;
         }
         
-        public Vaca getPorNombre(string nombre)
+        public Vaca buscarPorNombre(string nombre)
         {
+
+            for (int i = 0; i < vacas.Length; i++)
+            {   if (vacas[i].getNombre().Equals(nombre))
+                return vacas[i];
+            }
+
+            /*  foreach (Vaca unaVaca in vacas)
+            {   if (unaVaca.getNombre().Equals(nombre))
+                    return unaVaca;
+            }*/
             return null;
         }
 
